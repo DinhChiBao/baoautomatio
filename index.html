@@ -6,75 +6,87 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    
+    <!-- Logo và tiêu đề -->
     <div class="header">
+        <img src="anhnen.jpg" alt="Logo Bao Automation" class="logo">
+        <h1 class="company-title">BAO AUTOMATION</h1>
+    </div>
+
+    <!-- Menu chính -->
+    <nav class="nav">
+        <div class="header">
         <img src="logo.jpg" alt="Logo Bao Automation" class="logo">
         <h1 class="company-title">BAO AUTOMATION</h1>
-    
-    </div>
-    <nav class="nav">
-        <a href="#home"><i class="fas fa-home"></i>Trang chủ</a>
+        </div>
+        <a href="#home"><i class="fas fa-home"></i> Trang chủ</a>
         <a href="#about">Giới thiệu</a>
-        <a href="#services">Dịch vụ</a>
+        <a href="#services">Kinh ngiệm</a>
         <a href="#contact">Liên hệ</a>
-     </nav>
+       
+    </nav>
 
-    <section id ="home">
-        <h2>Trang chủ </h2>
-        <h2 style="text-align: center;color:#007b5e;">Chào mừng đến với Bao Automation</h2>
-        <img src="home.jpg" alt="banner BAO Automation" class="section1-img">
-        <p>Chào mừng bạn đến với BAO AUTOMATION -Giải pháp tự động hóa chuyên nghiệp.</p>
+    <!-- Layout chia làm 2: bên trái (menu phụ), bên phải (nội dung) -->
+    <div class="layout">
+        <!-- Menu bên trái -->
+        <aside class="sidebar">
+            <h3>THÔNG TIN</h3>
+            <ul>
+                 <p>Tên:Đinh Chí Bảo</p>
+                 <p>Năm sinh2002</p>
+                 <P>Chuyên ngành : Tự động hóa</P>
+                 <p>Trường Đại Học SPKT Vĩnh Long</p>
+            </ul>
+        </aside>
 
-    </section>
-    <section id ="about">
-        <h2>Giới thiệu</h2>
-        <img src="gioithieu.jpg"all="Giới thiệu" class="section-img">
-        <p>Chúng tôi cung cấp giải pháp tự động hóa ,PLC,HMI,SCADA,....</p>
-        <img src="gioithieu2.jpg"all="Giới thiệu" class="section-img">
-        <p>Tư vấn thiết kế lắp đặt hệ thống tự động hóa ,ioT,...</p>
-    </section>
-    <section id = "services">
-        <h2>Dịch vụ </h2>
-        <ul>
-            <li> Lập trình PLC </li>
-            <li>Thiết kế giao diện HMI</li>
-            <li>Tư vấn hệ thống SCADA</li>
-            <li>thiết kế tủ điện và cải tạo máy tự động hóa</li>
-            <li>Cung cấp biến tần công nghiệp</li>
+        <!-- Nội dung chính -->
+        <main class="main-content">
+            <!-- Các section nằm trong đây -->
+            <section id="home">
+                <h2>Trang chủ</h2>
+                <h2 class="hero-title">Chào mừng đến với Bao Automation</h2>
+                <img src="home.jpg" alt="banner BAO Automation" class="section-img">
+                <p>Chào mừng bạn đến với BAO AUTOMATION - Giải pháp tự động hóa chuyên nghiệp.</p>
+            </section>
 
-        </ul>
-    </section>
-    <section id="contact">
-        <p><i class="fas fa-envelope"></i> Email: dinhbao122002@gmail.com</p>
-<p><i class="fas fa-phone"></i> Hotline: 0349382539</p>
-<p><i class="fas fa-map-marker-alt"></i> Địa chỉ: Tân Tạo, Bình Tân, TP.HCM</p>
-     <h2>Liên hệ</h2>
-     <form class="contact-form">
-     <label for="name">Họ và tên:</label>
-     <input type="text" id="name" name="name" required>
- 
-     <label for="email">Email:</label>
-     <input type="email" id="email" name="email" required>
- 
-     <label for="message">Nội dung:</label>
-     <textarea id="message" name="message" rows="5" required></textarea>
+            <section id="about">
+                <h2>Giới thiệu</h2>
+                <img src="gioithieu.jpg" alt="Giới thiệu" class="section-img">
+                <p>Chúng tôi cung cấp giải pháp tự động hóa PLC, HMI, SCADA,...</p>
+                <img src="gioithieu2.jpg" alt="Giới thiệu" class="section-img">
+                <p>Tư vấn thiết kế, lắp đặt hệ thống tự động hóa, IoT,...</p>
+            </section>
 
-     <button type="submit">Gửi</button>
-    </form>
-</section>
-<script>
-  // Bắt sự kiện gửi form
-  const form = document.querySelector('.contact-form');
-  form.addEventListener('submit', function (e) {
-    e.preventDefault(); // Ngăn trình duyệt reload trang
+            <section id="services">
+                <h2>Dịch vụ</h2>
+                <ul>
+                    <li>Lập trình PLC</li>
+                    <li>Thiết kế giao diện HMI</li>
+                    <li>Tư vấn hệ thống SCADA</li>
+                    <li>Thiết kế tủ điện và cải tạo máy tự động hóa</li>
+                    <li>Cung cấp biến tần công nghiệp</li>
+                </ul>
+            </section>
 
-    alert('Cảm ơn bạn đã liên hệ! Chúng tôi sẽ phản hồi sớm.');
+            <section id="contact">
+                <h2>Liên hệ</h2>
+                <p><i class="fas fa-envelope"></i> Email: dinhbao122002@gmail.com</p>
+                <p><i class="fas fa-phone"></i> Hotline: 0349382539</p>
+                <p><i class="fas fa-map-marker-alt"></i> Địa chỉ: Tân Tạo, Bình Tân, TP.HCM</p>
+                <form class="contact-form">
+                    <label for="name">Họ và tên:</label>
+                    <input type="text" id="name" name="name" required>
 
-    // Xoá nội dung form sau khi gửi
-    form.reset();
-  });
-</script>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
 
+                    <label for="message">Nội dung:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit">Gửi</button>
+                </form>
+            </section>
+        </main>
+    </div>
 </body>
 
 </html>
